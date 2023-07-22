@@ -10,19 +10,21 @@
 <body>
     <img src="./ressources/background.jpg" alt="Leaves of a forest plant.">
     <div id="logo-card">
+        <img id="logo" src="./ressources/odin-lined.png" alt="TOP Logo">
         Odin
     </div>
     <div class="body">
         <p>This is not a real online service! You know you need something like this in your life to realize your deepest dreams. Sign up <em>now</em> to get started!</p>
         <p>You <em>know</em> you want to.</p>
 
+        
         <div id="form-card">
-            <h1>Let's do this!</h1>
+            <p id="form-heading">Let's do this!</p>
             <form>
                 <div class="container">
                     <div class="field">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" required>
+                        <input type="text" name="first-name" id="first-name" required autofocus>
                     </div>
                     <div class="field">
                         <label for="last-name">Last Name</label>
@@ -42,17 +44,19 @@
                 </div>
 
                 <div class="container">
-                    <div class="field">
+                    <div id="password-field" class="field">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required></label>
+                        <input type="password" name="password" id="password" class="password" required></label>
                     </div>
                     <div class="field">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
+                        <input type="password" name="confirm-password" id="confirm-password" class="password">
                     </div>
                 </div>
+                
+                <button type="submit" id="submit">Create Account</button>
+                <div id="login-message">Already have an account? <a href="#">Log in</a></div>
             </form>
-
         </div>
     </div>
 </body>
