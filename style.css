@@ -20,12 +20,13 @@ button {
 html, body {
     padding: 0;
     margin: 0;
+    min-width: 740px;
     overflow: hidden;
     font-family: sans-serif;
 }
 
 img {
-    width: 50vw;
+    width: max(735px, 50vw);
     height: auto;
 }
 
@@ -53,7 +54,8 @@ img {
 
 .body {
     position: absolute;
-    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
     top: 0;
     right: 0;
     z-index: auto;
@@ -80,6 +82,7 @@ p {
     width: 60vw;
     height: 285px;
     background-color: white;
+    box-shadow: 3px 1px 5px grey;
 }
 
 form {
@@ -140,10 +143,11 @@ div.error {
     background-color: #596D48;
     border: none;
     padding: 10px 10px;
-    width: 15vw;
+    width: max(15vw, 100px);
     border-radius: 6px;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #submit:hover {background-color: #6c8458;}
@@ -156,6 +160,7 @@ div.error {
 
 #login-message {
     margin-top: 20px;
+    margin-bottom: 80px;
 }
 
 a {
