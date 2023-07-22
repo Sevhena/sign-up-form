@@ -146,6 +146,14 @@ div.error {
     font-weight: bold;
 }
 
+#submit:hover {background-color: #6c8458;}
+
+#submit:active {
+    background-color: #6c8458;
+    
+    transform: translateY(2px);
+}
+
 #login-message {
     margin-top: 20px;
 }
