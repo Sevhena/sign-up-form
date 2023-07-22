@@ -111,7 +111,7 @@ label {
 input {
     width: 20vw;
     padding: 5px;
-    border: 2px solid #E5E7EB;
+    border: 1px solid #E5E7EB;
     letter-spacing: 0.1rem;
     border-radius: 4px;
 }
@@ -120,6 +120,18 @@ input:focus {
     border: 2px solid #8383e9;
     box-shadow: 5px 2px 5px grey;
     outline: none;
+}
+
+input.error, input.error:focus {
+    border-color: red;
+}
+
+div.error {
+    color: red;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-top: 1px;
+    letter-spacing: 0.1rem;
 }
 
 #submit {
